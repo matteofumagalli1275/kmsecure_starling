@@ -71,11 +71,10 @@ package
             var urlLoader:URLLoader = null;
             var urlRequest:URLRequest = null;
             var url:String = null;
-			var bytearray:ByteArray = new ByteArray();
-			var obj:Object;
+
             if (rawAsset is Class)
             {
-                setTimeout(complete, 1, obj as Object);//new rawAsset());
+                setTimeout(complete, 1, new rawAsset());
             }
             else if (rawAsset is String || rawAsset is URLRequest)
             {
